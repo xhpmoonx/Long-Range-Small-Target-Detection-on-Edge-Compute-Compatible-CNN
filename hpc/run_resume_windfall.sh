@@ -12,8 +12,7 @@
 module purge
 module load pytorch/nvidia/22.12
 
-cd "$(dirname "$0")/../.."
-
+cd "$(dirname "$0")/.."
 mkdir -p logs
 
-pytorch ultra_entry.py detect train resume=True model=runs/detect/outputs/baseline_main_retry/weights/last.pt
+pytorch scripts/ultra_entry.py detect train resume=True model=runs/detect/outputs/baseline_main_retry/weights/last.pt
