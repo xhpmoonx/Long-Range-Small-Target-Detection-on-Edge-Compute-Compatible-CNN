@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+yoloenv/
+yoloenv_ocelote/
+.venv/
+venv/
+
+# Data and outputs
+data/
+logs/
+runs/
+outputs/
+
+# Large model files
+*.pt
+*.pth
+*.onnx
+
+# Core dumps / temp
+core.*
+*.log
+*.tmp
+.DS_Store
