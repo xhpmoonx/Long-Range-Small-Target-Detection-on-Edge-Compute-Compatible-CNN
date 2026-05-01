@@ -577,8 +577,7 @@ class Bottleneck(nn.Module):
         """Apply bottleneck with optional shortcut connection."""
         # ── CUAS MODIFICATION: CBAM applied between cv1 and cv2 ─────────────────
         out = self.cbam(self.cv1(x))   # spatial + channel attention on hidden features
-        return x + self.cv2(self.cv1(x)) if self.add else self.cv2(self.cv1(x))
-
+        return x + self.cv2(out) if self.add else self.cv2(out)
 
 class BottleneckCSP(nn.Module):
     """CSP Bottleneck https://github.com/WongKinYiu/CrossStagePartialNetworks."""
