@@ -26,3 +26,6 @@ core.*
 *.log
 *.tmp
 .DS_Store
+
+#Datasets yaml
+#total_dataset.yaml
